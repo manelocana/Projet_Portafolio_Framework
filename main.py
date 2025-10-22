@@ -29,6 +29,11 @@ def contact():
     return render_template('user/contact.html')
 
 
+@app.route('/admin')
+def admin_home():
+    return render_template('admin/home.html')
+
+
 
 
 if __name__ == '__main__':
