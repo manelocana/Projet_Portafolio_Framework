@@ -34,6 +34,13 @@ def admin_home():
     return render_template('admin/home.html')
 
 
+@app.route('/admin/portfolio')
+def admin_portfolio():
+    return render_template('admin/portfolio.html')
+
+
+
+
 
 
 if __name__ == '__main__':
