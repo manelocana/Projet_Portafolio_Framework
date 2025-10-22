@@ -17,25 +17,9 @@ body {
     padding: 20px;
 }
 
-.custom-navbar .navbar-nav{
+header {
     position: sticky;
     top: 0;
-
+    z-index: 2;
 }
 
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 2;
-    }
-
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px;
-    }
-
-    header nav {
-        flex-direction: row;
-        padding-bottom: 0px;
-    } 

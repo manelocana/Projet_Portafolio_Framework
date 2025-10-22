@@ -14,9 +14,9 @@ def pages():
     return render_template('user/pages.html')
 
 
-@app.route('/portafolio')
+@app.route('/portfolio')
 def portafolio():
-    return render_template('user/portafolio.html')
+    return render_template('user/portfolio.html')
 
 
 @app.route('/blog')
