@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Portfolio</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -19,22 +19,32 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <!-- style.css -->
+        <link 
+            rel="stylesheet" 
+            href="{{ url_for('static', filename='css/style.css') }}"
+        >
+
+
     </head>
 
     <body>
 
-        <!-- bs5-nav-minimal-a -->
-        <nav class="navbar navbar-expand navbar-light bg-light">
-            <div class="nav navbar-nav">
-                <a class="nav-item nav-link active" href="/" aria-current="page"
-                    >Home <span class="visually-hidden">(current)</span></a
-                >
-                <a class="nav-item nav-link" href="/pages">Pages</a>
-                <a class="nav-item nav-link" href="/portafolio">Portafolio</a>
-                <a class="nav-item nav-link" href="/blog">Blog</a>
-                <a class="nav-item nav-link" href="/contact">Contact</a>
-            </div>
-        </nav>
+        <header>
+            <!-- bs5-nav-minimal-a -->
+            <nav class="navbar navbar-expand navbar-light bg-light custom-navbar">
+                <div class="nav navbar-nav">
+                    <a class="nav-item nav-link active" href="/" aria-current="page"
+                        >Home <span class="visually-hidden">(current)</span></a
+                    >
+                    <a class="nav-item nav-link" href="/pages">Pages</a>
+                    <a class="nav-item nav-link" href="/portafolio">Portafolio</a>
+                    <a class="nav-item nav-link" href="/blog">Blog</a>
+                    <a class="nav-item nav-link" href="/contact">Contact</a>
+                </div>
+            </nav>
+        </header>
 
 
         <!-- je ouvre ici le div pour le body...

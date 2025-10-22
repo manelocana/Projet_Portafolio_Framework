@@ -1,0 +1,41 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.custom-navbar .navbar-nav{
+    position: sticky;
+    top: 0;
+
+}
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0px;
+    } 
