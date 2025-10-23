@@ -39,6 +39,11 @@ def admin_portfolio():
     return render_template('admin/portfolio.html')
 
 
+@app.route('/admin/login')
+def admin_login():
+    return render_template('admin/login.html')
+
+
 
 
 
