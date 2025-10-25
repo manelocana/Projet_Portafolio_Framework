@@ -18,7 +18,8 @@
                 <div class="card-body">
                     
                     <!-- form:post et dans le form, les inputs-->
-                    <form action="" method="post">
+                     <!-- action ou jenvoie les donnes -->
+                    <form action="/admin/portfolio/ajouter" method="post" enctype="multipart/form-data">
 
                         <!-- bs5-form-input -->
                         <div class="mb-3">
@@ -73,21 +74,24 @@
                 >
                     <thead>
                         <tr>
-                            <th scope="col">Column 1</th>
-                            <th scope="col">Column 2</th>
-                            <th scope="col">Column 3</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="">
-                            <td scope="row">R1C1</td>
-                            <td>R1C2</td>
-                            <td>R1C3</td>
+                            <td scope="row">1</td>
+                            <td>Photo paisage</td>
+                            <td>img.jpg</td>
+                            <td>Supprimer</td>
                         </tr>
                         <tr class="">
-                            <td scope="row">Item</td>
-                            <td>Item</td>
-                            <td>Item</td>
+                            <td scope="row">2</td>
+                            <td>Photo animal</td>
+                            <td>img.jpg</td>
+                            <td>Supprimer</td>
                         </tr>
                     </tbody>
                 </table>

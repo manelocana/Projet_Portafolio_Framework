@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 
 app = Flask(__name__)
@@ -44,6 +44,16 @@ def admin_login():
     return render_template('admin/login.html')
 
 
+#request.files pour les images (no .form)
+@app.route('/admin/portfolio/ajouter', methods=['POST'])
+def admin_portfolio_ajouter():
+    _name = request.form['txt_name']
+    _file = request.files['txt_img']
+
+    print(_name)
+    print(_file)
+    return redirect('/admin/portfolio')
+    
 
 
 
