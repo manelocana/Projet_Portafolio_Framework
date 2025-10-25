@@ -5,7 +5,70 @@
 
 {% include 'admin/header.html' %}
 
+<!-- bs5-grid-default, je cree un container grid, et je mets des cards dedans, et
+ dans le card, le formulaire -->
+<div class="container">
+    <div class="row">
+        <div
+            class="col-md-6"
+        >
+            <!-- bs5-card-head-foot -->
+            <div class="card">
+                <div class="card-header">Ajouter Photos</div>
+                <div class="card-body">
+                    
+                    <!-- form:post et dans le form, les inputs-->
+                    <form action="" method="post">
 
-portfolio admin
+                        <!-- bs5-form-input -->
+                        <div class="mb-3">
+                            <label for="txt_name" class="form-label">Nom Photo</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="txt_name"
+                                id="txt_name"
+                                aria-describedby="helpId"
+                                placeholder="Ecris le nom"
+                            />
+                        </div>
+
+                        <!-- type=file, pour selectioner fichiers -->
+                        <div class="mb-3">
+                            <label for="txt_img" class="form-label">Img</label>
+                            <input
+                                type="file"
+                                class="form-control"
+                                name="txt_img"
+                                id="txt_img"
+                                aria-describedby="helpId"
+                                placeholder="Choisir le img"
+                            />
+                        </div>
+                        
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Ajouter
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="col-md-6"
+        >
+            Second Column
+        </div>
+        
+    </div>
+</div>
+
+
+
 
 {% include 'admin/footer.html' %}
