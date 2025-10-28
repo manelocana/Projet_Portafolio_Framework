@@ -45,6 +45,7 @@ def admin_login():
 
 
 #request.files pour les images (no .form)
+ #apres le post => redirect url
 @app.route('/admin/portfolio/ajouter', methods=['POST'])
 def admin_portfolio_ajouter():
     _name = request.form['txt_name']

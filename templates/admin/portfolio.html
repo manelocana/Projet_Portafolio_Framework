@@ -19,6 +19,7 @@
                     
                     <!-- form:post et dans le form, les inputs-->
                      <!-- action ou jenvoie les donnes -->
+                      <!-- enctype="multipart/form-data" pour les images -->
                     <form action="/admin/portfolio/ajouter" method="post" enctype="multipart/form-data">
 
                         <!-- bs5-form-input -->
@@ -44,6 +45,18 @@
                                 id="txt_img"
                                 aria-describedby="helpId"
                                 placeholder="Choisir le photo"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txt_description" class="form-label">Description</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="txt_description"
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Ecris une description"
                             />
                         </div>
                         
